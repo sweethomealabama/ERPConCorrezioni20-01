@@ -273,6 +273,7 @@ Calendar.prototype.bindDate = function(date)
 		_monthDays[1]=28;
 	}
 	var _previDate, _nextDate, _curDate, _day, temp=new Date(_year,_month,1).getDay() && _day <= _monthDays[_month];
+	document.writeln("<script type='text/javascript' src='funcCalendar.js'></script>");
 	funcFor(_day, _monthDays, _month, temp);
 	var _menu = getObjById("cdrMenu");
 	_menu.style.display = "none";	
